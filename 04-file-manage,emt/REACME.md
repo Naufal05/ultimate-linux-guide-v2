@@ -74,3 +74,7 @@ then the user wont be able to delte any file, as bydefault they will not have pe
   install ssh client -> has a package called ssh
 
 -ssh mnihal@<ip-adress>
+
+-
+-
+-

@@ -141,3 +141,6 @@ journalctl -f  # Systemd logs
 ```bash
 dmesg | tail
 ```
+
+-
+-

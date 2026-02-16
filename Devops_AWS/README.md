@@ -123,3 +123,4 @@ We use shell scripting in :
 3. code
 
 Example : Let a Devops engineer, has 10,000 VM's -> node health check ->
+/

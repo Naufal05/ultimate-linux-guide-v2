@@ -59,3 +59,67 @@ Devops is the process of improving the application delivery by ensuring there is
 - aws configure // aws cli control aws features
 
 -Boto3
+
+// --------------- Day-6 | Linux OS and Basics of Shell scripting--------------//
+
+## Fundamentals of Shell scripting
+
+\*\*bash is the popular
+
+1. pwd
+2. cd
+3. touch
+4. vi test // you can start writing inside the file
+5. cat // to print the content
+6. mkdir
+7. rm // remove the files
+8. rm -r // remove directory
+9. free -g // memory
+10. nproc // number of cpus
+11. df -h // disk size
+12. top // best command to know memmory manangement
+13. history // gives the all the different commands you entered.
+
+The process of automating the process.
+
+\*\*Basic requirement to start shell scripting
+
+1. Need a file
+   - touch firest-script.sh
+
+\*\*man <command> -> gives the details of the command
+
+2. open the file
+   vim / vi ( vi is available by default)
+
+3. start wriitng shell script
+   - INSERT mode
+   - shebang -> #i/bin/bash
+
+// print my name
+
+echo "my name is Naufal"
+
+    -ESC  -> :wq!
+
+4.  Execute the file
+    - sh first-script.sh
+    - ./ first-script.sh
+
+In Linux, even when you create the file, even also you need to grant permission to your file. - chmod // grants permission of the specific file.
+
+Arguments passed to chmod: 1. which admin-user access? 2. which group access ? 3. what access for you ? - all users
+
+- chmod 777 name-file // grant access to all
+
+- 4 - read
+- 2 - write
+- 1 - execute
+
+We use shell scripting in :
+
+1. infrastructure management
+2. Configuration management
+3. code
+
+Example : Let a Devops engineer, has 10,000 VM's -> node health check ->

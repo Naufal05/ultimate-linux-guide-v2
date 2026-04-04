@@ -124,4 +124,59 @@ We use shell scripting in :
 
 Example : Let a Devops engineer, has 10,000 VM's -> node health check ->
 
+//-------------------------Day 07 - Advanced Shell Scripting ---------------------------//
+
+Very important
+- df
+- top  / helps to analyse the node status
+- free
+- nproc 
+--------------------------------------
+vim nodehealth.sh
+#!/bin/bash     // the executable
+
+Belos is the Metadata
+################################
+# Author: Naufal
+# Date: 01/12/2022
+#
+# This script outputs the nodehealth
+# VersionL v1
+#########################3333###
+Echo “Print the disk space”
+df - h
+free -g
+nproc
+Whenever you add a acript make sure you provide exact permission as per your organisation.
+Debugging:
+ 
+Set -x and echo statements helps in the debugging 
+~ 	Ps -ef	// it gives the details of the process in the VM
+~	ps -ef | grep “amazon”	// out of all the processes, there only displays the amazons process
+Pipe command and grep commans
+-	| commands sends the output of the first command to the second command.
+ 
+
+ 
+
+The default command sends the output to the stdin , stdout or stderr etc, that is the reason why the date output is not forward the ecgo in the below example of pipe command:
+
+ 
+~  awk  // pattern scanning and processing language
+-	Ps -ef | grep amazon | awk -F” “ ‘{print $2}’	// this retrieves info of a specific column
+Always make sure you use the right column number.
+
+~ set -x //debug
+~ set -o  // pipefail
+~ set -e	// exits the script when there is an error
+Or
+set -exo pipefail  // combine of the above, note don’t use this always.
+
+
+One of the major usecase of DevOps ?
+-	If any issue – check the log file and find errors there.
+-	
+
+
+
 <!-- test -->
